@@ -23,14 +23,19 @@ def scrape_station_data(station_id):
 
 
 output = ""
-start = 61
-for station_id in range(start, 81):
+
+output += "[\n"
+
+start = 0
+total = 213
+
+for station_id in range(start, total + 1):
     station_info = scrape_station_data(station_id)
     if station_info:
         lat, long, name = station_info
-        id = station_id - start + 1
-        id = str(id).zfill(2)
-        output += '{{ lat: {0}, lng: {1} }}, // T{2}: {3}\n'.format(lat, long, id, name)
+        output += '  {{ lat: {0}, lng: {1}, name: "{2}" }},\n'.format(lat, long, name)
+
+output += "]\n"
 
 
 print(output)
