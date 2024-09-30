@@ -42,7 +42,7 @@ def main():
         print("Error: Both arguments must be integers.")
         sys.exit(1)
 
-    output_file_name = 'data-{0}-to-{1}'.format(start, end)
+    output_file_name = 'data-{0}-to-{1}.json'.format(start, end)
 
     output = "[\n"
 
