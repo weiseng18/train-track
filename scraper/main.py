@@ -22,20 +22,24 @@ def scrape_station_data(station_id):
         return None
 
 
-output = ""
+def main():
+    # Note that the entries go from index 0 to 213
+    start = 0
+    end = 213
+    output_file_name = 'data-{0}-to-{1}'.format(start, end)
 
-output += "[\n"
+    output = "[\n"
 
-start = 0
-total = 213
+    for station_id in range(start, end + 1):
+        station_info = scrape_station_data(station_id)
+        if station_info:
+            lat, long, name = station_info
+            output += '  {{ lat: {0}, lng: {1}, name: "{2}" }},\n'.format(lat, long, name)
 
-for station_id in range(start, total + 1):
-    station_info = scrape_station_data(station_id)
-    if station_info:
-        lat, long, name = station_info
-        output += '  {{ lat: {0}, lng: {1}, name: "{2}" }},\n'.format(lat, long, name)
+    output += "]\n"
 
-output += "]\n"
+    with open(output_file_name, 'w') as file:
+        file.write(output)
 
 
-print(output)
+main()
