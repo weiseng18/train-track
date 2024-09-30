@@ -1,4 +1,5 @@
 import requests
+import sys
 from bs4 import BeautifulSoup
 
 
@@ -23,9 +24,24 @@ def scrape_station_data(station_id):
 
 
 def main():
+    if len(sys.argv) != 3:
+        print("Error: Please provide exactly two integer arguments.")
+        print("Sample usage: python3 main.py 0 213")
+        sys.exit(1)
+
     # Note that the entries go from index 0 to 213
-    start = 0
-    end = 213
+    try:
+        start = int(sys.argv[1])
+        end = int(sys.argv[2])
+
+        if start > end:
+            print("start must be less than or equal to end.")
+            sys.exit(1)
+
+    except ValueError:
+        print("Error: Both arguments must be integers.")
+        sys.exit(1)
+
     output_file_name = 'data-{0}-to-{1}'.format(start, end)
 
     output = "[\n"
