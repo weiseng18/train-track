@@ -19,11 +19,10 @@ jobs:
         with:
           node-version: '18'
 
-      - name: Change directory to web-app
-        run: cd web-app
-
       - name: Install dependencies
         run: npm install
+        working-directory: web-app
 
       - name: Run ESLint
         run: npm run lint
+        working-directory: web-app
