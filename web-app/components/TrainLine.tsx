@@ -7,33 +7,36 @@ interface TrainLineProps {
 }
 
 const TrainLine = ({ points, color }: TrainLineProps) => {
-  return <>
-    { points && points.length > 0 && (
-      <>
-        {points.map((point, index) => (
-          <Circle
-            key={index}
-            center={point}
-            radius={50}
+  return (
+    <>
+      {points && points.length > 0 && (
+        <>
+          {points.map((point, index) => (
+            <Circle
+              key={index}
+              center={point}
+              radius={50}
+              options={{
+                fillColor: "white",
+                fillOpacity: 1,
+                strokeColor: "black",
+                strokeOpacity: 1,
+                strokeWeight: 3,
+              }}
+            />
+          ))}
+          <Polyline
+            path={points}
             options={{
-              fillColor: "white",
-              fillOpacity: 1,
-              strokeColor: "black",
+              strokeColor: color,
               strokeOpacity: 1,
-              strokeWeight: 3,
+              strokeWeight: 5,
             }}
           />
-        ))}
-        <Polyline
-          path={points}
-          options={{
-            strokeColor: color,
-            strokeOpacity: 1,
-            strokeWeight: 5,
-          }}
-        />
-      </>
-    )}</>
+        </>
+      )}
+    </>
+  );
 };
 
 export default TrainLine;

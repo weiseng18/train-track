@@ -28,7 +28,6 @@ const points: Point[] = [
   { lat: 35.707, lng: 139.959 }, // T23: Nishi-Funabashi
 ];
 
-
 const IndexPage = () => {
   const defaultZoom = 15;
   const defaultCenter = points[3];
@@ -39,7 +38,7 @@ const IndexPage = () => {
         defaultZoom={defaultZoom}
         defaultCenter={defaultCenter}
       >
-        <TrainLine points={points} color={'#009BBF'} />
+        <TrainLine points={points} color={"#009BBF"} />
       </GoogleMapComponent>
     </div>
   );

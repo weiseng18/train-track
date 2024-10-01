@@ -12,12 +12,16 @@ const containerStyle = {
   height: "100vh",
 };
 
-const GoogleMapComponent = ({ defaultZoom, defaultCenter, children }: GoogleMapComponentProps) => {
+const GoogleMapComponent = ({
+  defaultZoom,
+  defaultCenter,
+  children,
+}: GoogleMapComponentProps) => {
   const { isLoaded } = useJsApiLoader({
     id: "google-map-script",
     // NOTE: It is necessary to expose the API key in the frontend in order to use the Google Maps API.
     // The API key used here is restricted to only allow requests from my website.
-    googleMapsApiKey: process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY
+    googleMapsApiKey: process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY,
   });
 
   return isLoaded ? (
@@ -25,9 +29,12 @@ const GoogleMapComponent = ({ defaultZoom, defaultCenter, children }: GoogleMapC
       mapContainerStyle={containerStyle}
       center={defaultCenter}
       zoom={defaultZoom}
-    >{children}</GoogleMap>
-  ) : <></>;
+    >
+      {children}
+    </GoogleMap>
+  ) : (
+    <></>
+  );
 };
 
 export default GoogleMapComponent;
-
