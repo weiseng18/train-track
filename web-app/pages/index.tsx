@@ -1,6 +1,6 @@
-import GoogleMapComponent from "../components/MapWrapper";
-import { Point } from "../types/points";
-import TrainLine from "../components/TrainLine";
+import GoogleMapComponent from '../components/MapWrapper'
+import { Point } from '../types/points'
+import TrainLine from '../components/TrainLine'
 
 const points: Point[] = [
   { lat: 35.706111, lng: 139.665556 }, // T01: Nakano
@@ -26,11 +26,11 @@ const points: Point[] = [
   { lat: 35.691592, lng: 139.925008 }, // T21: Myoden
   { lat: 35.703202, lng: 139.941879 }, // T22: Baraki-Nakayama
   { lat: 35.707, lng: 139.959 }, // T23: Nishi-Funabashi
-];
+]
 
 const IndexPage = () => {
-  const defaultZoom = 15;
-  const defaultCenter = points[3];
+  const defaultZoom = 15
+  const defaultCenter = points[3]
 
   return (
     <div>
@@ -38,10 +38,10 @@ const IndexPage = () => {
         defaultZoom={defaultZoom}
         defaultCenter={defaultCenter}
       >
-        <TrainLine points={points} color={"#009BBF"} />
+        <TrainLine points={points} color={'#009BBF'} />
       </GoogleMapComponent>
     </div>
-  );
-};
+  )
+}
 
-export default IndexPage;
+export default IndexPage
