@@ -5,10 +5,12 @@
     "dev": "next dev",
     "start": "next start",
     "lint": "next lint --dir .",
-    "lint:fix": "next lint --fix --dir ."
+    "lint:fix": "next lint --fix --dir .",
+    "prepare": "husky"
   },
   "dependencies": {
     "@react-google-maps/api": "^2.19.3",
+    "husky": "^9.1.6",
     "next": "latest",
     "react": "18.2.0",
     "react-dom": "18.2.0"
