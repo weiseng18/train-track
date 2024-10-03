@@ -1,4 +1,6 @@
-export const tokyoMetroStations = [
+import { TrainStation } from "../types/lines";
+
+export const tokyoMetroStations: TrainStation[] = [
   { lat: 35.658514, lng: 139.70133, name: "Shibuya" },
   { lat: 35.665148, lng: 139.712521, name: "Omote-sando" },
   { lat: 35.67065, lng: 139.718145, name: "Gaiemmae" },
