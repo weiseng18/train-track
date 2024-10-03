@@ -4,6 +4,7 @@ export interface StationLineAndCode {
   code: string;
 }
 
+// Raw data in constants/tokyo-metro.ts
 export interface TrainStation {
   lat: number;
   lng: number;
