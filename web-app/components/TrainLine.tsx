@@ -1,9 +1,9 @@
-import { Circle, Polyline } from "@react-google-maps/api";
-import { Point } from "../types/points";
+import { Circle, Polyline } from '@react-google-maps/api'
+import { Point } from '../types/points'
 
 interface TrainLineProps {
-  points: Point[];
-  color: string;
+  points: Point[]
+  color: string
 }
 
 const TrainLine = ({ points, color }: TrainLineProps) => {
@@ -17,9 +17,9 @@ const TrainLine = ({ points, color }: TrainLineProps) => {
               center={point}
               radius={50}
               options={{
-                fillColor: "white",
+                fillColor: 'white',
                 fillOpacity: 1,
-                strokeColor: "black",
+                strokeColor: 'black',
                 strokeOpacity: 1,
                 strokeWeight: 3,
               }}
@@ -36,7 +36,7 @@ const TrainLine = ({ points, color }: TrainLineProps) => {
         </>
       )}
     </>
-  );
-};
+  )
+}
 
-export default TrainLine;
+export default TrainLine
