@@ -1,15 +1,14 @@
-
 export interface StationLineAndCode {
-  line: Line;
-  code: string;
+  line: Line
+  code: string
 }
 
 // Raw data in constants/tokyo-metro.ts
 export interface TrainStation {
-  lat: number;
-  lng: number;
-  name: string;
-  codes?: StationLineAndCode[];
+  lat: number
+  lng: number
+  name: string
+  codes?: StationLineAndCode[]
 }
 
 export enum Line {

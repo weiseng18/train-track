@@ -1,11 +1,14 @@
-import { tokyoMetroStations } from "../constants/tokyo-metro";
-import { Line } from "../types/lines";
-import { LineMap, TrainStationInfo } from "../types/line-map";
+import { tokyoMetroStations } from '../constants/tokyo-metro'
+import { Line } from '../types/lines'
+import { LineMap, TrainStationInfo } from '../types/line-map'
 
 export function obtainLines(): LineMap {
   // Setup the lineMap
   const lines = Object.keys(Line).filter((k) => !isNaN(Number(k)))
-  let lineMap: LineMap = Object.assign({}, ...lines.map((line) => ({ [line]: [] })))
+  const lineMap: LineMap = Object.assign(
+    {},
+    ...lines.map((line) => ({ [line]: [] }))
+  )
 
   // Populate
   tokyoMetroStations.forEach((station) => {
