@@ -1,7 +1,7 @@
 import { lineColors } from '../constants/colors'
 import { Line } from '../types/lines'
 import { obtainLines } from '../utils/preprocessing'
-import TrainLine from './TrainLine'
+import StraightTrainLine from './StraightTrainLine'
 
 const AllTrainLines = () => {
   const lineMap = obtainLines()
@@ -25,7 +25,13 @@ const AllTrainLines = () => {
           lat: c.lat,
           lng: c.lng,
         }))
-        return <TrainLine points={points} color={lineColors[line]} key={line} />
+        return (
+          <StraightTrainLine
+            points={points}
+            color={lineColors[line]}
+            key={line}
+          />
+        )
       })}
     </div>
   )

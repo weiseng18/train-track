@@ -6,7 +6,7 @@ interface TrainLineProps {
   color: string
 }
 
-const TrainLine = ({ points, color }: TrainLineProps) => {
+const StraightTrainLine = ({ points, color }: TrainLineProps) => {
   return (
     <>
       {points && points.length > 0 && (
@@ -39,4 +39,4 @@ const TrainLine = ({ points, color }: TrainLineProps) => {
   )
 }
 
-export default TrainLine
+export default StraightTrainLine
