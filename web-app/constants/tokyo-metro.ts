@@ -48,7 +48,10 @@ export const tokyoMetroStations: TrainStation[] = [
     lat: 35.672803,
     lng: 139.741416,
     name: 'Tameike-sanno',
-    codes: [{ line: Line.Ginza, code: 'G06' }],
+    codes: [
+      { line: Line.Ginza, code: 'G06' },
+      { line: Line.Namboku, code: 'N06' },
+    ],
   },
   {
     lat: 35.670175,
@@ -214,7 +217,10 @@ export const tokyoMetroStations: TrainStation[] = [
     lat: 35.686111,
     lng: 139.730556,
     name: 'Yotsuya',
-    codes: [{ line: Line.Marunouchi, code: 'M12' }],
+    codes: [
+      { line: Line.Marunouchi, code: 'M12' },
+      { line: Line.Namboku, code: 'N08' },
+    ],
   },
   {
     lat: 35.674119,
@@ -274,7 +280,10 @@ export const tokyoMetroStations: TrainStation[] = [
     lat: 35.70734,
     lng: 139.751303,
     name: 'Korakuen',
-    codes: [{ line: Line.Marunouchi, code: 'M22' }],
+    codes: [
+      { line: Line.Marunouchi, code: 'M22' },
+      { line: Line.Namboku, code: 'N11' },
+    ],
   },
   {
     lat: 35.717275,
@@ -466,6 +475,7 @@ export const tokyoMetroStations: TrainStation[] = [
     codes: [
       { line: Line.Tozai, code: 'T06' },
       { line: Line.Yurakucho, code: 'Y13' },
+      { line: Line.Namboku, code: 'N10' },
     ],
   },
   {
@@ -715,7 +725,10 @@ export const tokyoMetroStations: TrainStation[] = [
     lat: 35.691111,
     lng: 139.735556,
     name: 'Ichigaya',
-    codes: [{ line: Line.Yurakucho, code: 'Y14' }],
+    codes: [
+      { line: Line.Yurakucho, code: 'Y14' },
+      { line: Line.Namboku, code: 'N09' },
+    ],
   },
   {
     lat: 35.683933,
@@ -730,6 +743,7 @@ export const tokyoMetroStations: TrainStation[] = [
     codes: [
       { line: Line.Yurakucho, code: 'Y16' },
       { line: Line.Hanzomon, code: 'Z04' },
+      { line: Line.Namboku, code: 'N07' },
     ],
   },
   {
@@ -822,19 +836,84 @@ export const tokyoMetroStations: TrainStation[] = [
     name: 'Oshiage',
     codes: [{ line: Line.Hanzomon, code: 'Z14' }],
   },
-  { lat: 35.633983, lng: 139.716, name: 'Meguro' },
-  { lat: 35.638003, lng: 139.726322, name: 'Shirokanedai' },
-  { lat: 35.643183, lng: 139.734128, name: 'Shirokane-takanawa' },
-  { lat: 35.654742, lng: 139.737012, name: 'Azabu-juban' },
-  { lat: 35.664902, lng: 139.738884, name: 'Roppongi-itchome' },
-  { lat: 35.717576, lng: 139.758056, name: 'Todaimae' },
-  { lat: 35.72454, lng: 139.753765, name: 'Hon-komagome' },
-  { lat: 35.736289, lng: 139.746995, name: 'Komagome' },
-  { lat: 35.745938, lng: 139.742274, name: 'Nishigahara' },
-  { lat: 35.7525, lng: 139.738056, name: 'Oji' },
-  { lat: 35.764914, lng: 139.735821, name: 'Oji-kamiya' },
-  { lat: 35.777921, lng: 139.732594, name: 'Shimo' },
-  { lat: 35.783333, lng: 139.722222, name: 'Akabane-iwabuchi' },
+  {
+    lat: 35.633983,
+    lng: 139.716,
+    name: 'Meguro',
+    codes: [{ line: Line.Namboku, code: 'N01' }],
+  },
+  {
+    lat: 35.638003,
+    lng: 139.726322,
+    name: 'Shirokanedai',
+    codes: [{ line: Line.Namboku, code: 'N02' }],
+  },
+  {
+    lat: 35.643183,
+    lng: 139.734128,
+    name: 'Shirokane-takanawa',
+    codes: [{ line: Line.Namboku, code: 'N03' }],
+  },
+  {
+    lat: 35.654742,
+    lng: 139.737012,
+    name: 'Azabu-juban',
+    codes: [{ line: Line.Namboku, code: 'N04' }],
+  },
+  {
+    lat: 35.664902,
+    lng: 139.738884,
+    name: 'Roppongi-itchome',
+    codes: [{ line: Line.Namboku, code: 'N05' }],
+  },
+  {
+    lat: 35.717576,
+    lng: 139.758056,
+    name: 'Todaimae',
+    codes: [{ line: Line.Namboku, code: 'N12' }],
+  },
+  {
+    lat: 35.72454,
+    lng: 139.753765,
+    name: 'Hon-komagome',
+    codes: [{ line: Line.Namboku, code: 'N13' }],
+  },
+  {
+    lat: 35.736289,
+    lng: 139.746995,
+    name: 'Komagome',
+    codes: [{ line: Line.Namboku, code: 'N14' }],
+  },
+  {
+    lat: 35.745938,
+    lng: 139.742274,
+    name: 'Nishigahara',
+    codes: [{ line: Line.Namboku, code: 'N15' }],
+  },
+  {
+    lat: 35.7525,
+    lng: 139.738056,
+    name: 'Oji',
+    codes: [{ line: Line.Namboku, code: 'N16' }],
+  },
+  {
+    lat: 35.764914,
+    lng: 139.735821,
+    name: 'Oji-kamiya',
+    codes: [{ line: Line.Namboku, code: 'N17' }],
+  },
+  {
+    lat: 35.777921,
+    lng: 139.732594,
+    name: 'Shimo',
+    codes: [{ line: Line.Namboku, code: 'N18' }],
+  },
+  {
+    lat: 35.783333,
+    lng: 139.722222,
+    name: 'Akabane-iwabuchi',
+    codes: [{ line: Line.Namboku, code: 'N19' }],
+  },
   { lat: 35.720574, lng: 139.715139, name: 'Zoshigaya' },
   { lat: 35.707222, lng: 139.709167, name: 'Nishi-waseda' },
   { lat: 35.697922, lng: 139.707631, name: 'Higashi-shinjuku' },
