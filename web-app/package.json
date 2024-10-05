@@ -13,7 +13,8 @@
     "husky": "^9.1.6",
     "next": "latest",
     "react": "18.2.0",
-    "react-dom": "18.2.0"
+    "react-dom": "18.2.0",
+    "usehooks-ts": "^3.1.0"
   },
   "engines": {
     "node": ">=18"
