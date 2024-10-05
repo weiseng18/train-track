@@ -1,4 +1,4 @@
-import { tokyoMetroStations } from '../constants/tokyo-metro'
+import { tokyoMetroStations } from '../constants/stations'
 import { Line } from '../types/lines'
 import { LineMap, TrainStationInfo } from '../types/line-map'
 
