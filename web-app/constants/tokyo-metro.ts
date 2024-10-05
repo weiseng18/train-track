@@ -8,6 +8,7 @@ export const tokyoMetroStations: TrainStation[] = [
     codes: [
       { line: Line.Ginza, code: 'G01' },
       { line: Line.Hanzomon, code: 'Z01' },
+      { line: Line.Fukutoshin, code: 'F16' },
     ],
   },
   {
@@ -199,7 +200,10 @@ export const tokyoMetroStations: TrainStation[] = [
     lat: 35.690614,
     lng: 139.706267,
     name: 'Shinjuku-sanchome',
-    codes: [{ line: Line.Marunouchi, code: 'M09' }],
+    codes: [
+      { line: Line.Marunouchi, code: 'M09' },
+      { line: Line.Fukutoshin, code: 'F13' },
+    ],
   },
   {
     lat: 35.688577,
@@ -304,6 +308,7 @@ export const tokyoMetroStations: TrainStation[] = [
     codes: [
       { line: Line.Marunouchi, code: 'M25' },
       { line: Line.Yurakucho, code: 'Y09' },
+      { line: Line.Fukutoshin, code: 'F09' },
     ],
   },
   {
@@ -581,7 +586,10 @@ export const tokyoMetroStations: TrainStation[] = [
     lat: 35.668449,
     lng: 139.705351,
     name: 'Meiji-jingumae (Harajuku)',
-    codes: [{ line: Line.Chiyoda, code: 'C03' }],
+    codes: [
+      { line: Line.Chiyoda, code: 'C03' },
+      { line: Line.Fukutoshin, code: 'F15' },
+    ],
   },
   {
     lat: 35.666536,
@@ -659,49 +667,73 @@ export const tokyoMetroStations: TrainStation[] = [
     lat: 35.788407,
     lng: 139.612885,
     name: 'Wakoshi',
-    codes: [{ line: Line.Yurakucho, code: 'Y01' }],
+    codes: [
+      { line: Line.Yurakucho, code: 'Y01' },
+      { line: Line.Fukutoshin, code: 'F01' },
+    ],
   },
   {
     lat: 35.776557,
     lng: 139.63151,
     name: 'Chikatetsu-narimasu',
-    codes: [{ line: Line.Yurakucho, code: 'Y02' }],
+    codes: [
+      { line: Line.Yurakucho, code: 'Y02' },
+      { line: Line.Fukutoshin, code: 'F02' },
+    ],
   },
   {
     lat: 35.769945,
     lng: 139.644052,
     name: 'Chikatetsu-akatsuka',
-    codes: [{ line: Line.Yurakucho, code: 'Y03' }],
+    codes: [
+      { line: Line.Yurakucho, code: 'Y03' },
+      { line: Line.Fukutoshin, code: 'F03' },
+    ],
   },
   {
     lat: 35.757744,
     lng: 139.653955,
     name: 'Heiwadai',
-    codes: [{ line: Line.Yurakucho, code: 'Y04' }],
+    codes: [
+      { line: Line.Yurakucho, code: 'Y04' },
+      { line: Line.Fukutoshin, code: 'F04' },
+    ],
   },
   {
     lat: 35.749782,
     lng: 139.665102,
     name: 'Hikawadai',
-    codes: [{ line: Line.Yurakucho, code: 'Y05' }],
+    codes: [
+      { line: Line.Yurakucho, code: 'Y05' },
+      { line: Line.Fukutoshin, code: 'F05' },
+    ],
   },
   {
     lat: 35.743808,
     lng: 139.678566,
     name: 'Kotake-mukaihara',
-    codes: [{ line: Line.Yurakucho, code: 'Y06' }],
+    codes: [
+      { line: Line.Yurakucho, code: 'Y06' },
+      { line: Line.Fukutoshin, code: 'F06' },
+    ],
   },
   {
     lat: 35.738394,
     lng: 139.689191,
     name: 'Senkawa',
-    codes: [{ line: Line.Yurakucho, code: 'Y07' }],
+    codes: [
+      { line: Line.Yurakucho, code: 'Y07' },
+      { line: Line.Fukutoshin, code: 'F07' },
+    ],
   },
   {
     lat: 35.733199,
     lng: 139.698994,
     name: 'Kanamecho',
-    codes: [{ line: Line.Yurakucho, code: 'Y08' }],
+    codes: [
+      { line: Line.Yurakucho, code: 'Y08' },
+      { line: Line.Fukutoshin, code: 'F08' },
+    ],
   },
   {
     lat: 35.725228,
@@ -914,10 +946,30 @@ export const tokyoMetroStations: TrainStation[] = [
     name: 'Akabane-iwabuchi',
     codes: [{ line: Line.Namboku, code: 'N19' }],
   },
-  { lat: 35.720574, lng: 139.715139, name: 'Zoshigaya' },
-  { lat: 35.707222, lng: 139.709167, name: 'Nishi-waseda' },
-  { lat: 35.697922, lng: 139.707631, name: 'Higashi-shinjuku' },
-  { lat: 35.678611, lng: 139.705278, name: 'Kita-sando' },
+  {
+    lat: 35.720574,
+    lng: 139.715139,
+    name: 'Zoshigaya',
+    codes: [{ line: Line.Fukutoshin, code: 'F10' }],
+  },
+  {
+    lat: 35.707222,
+    lng: 139.709167,
+    name: 'Nishi-waseda',
+    codes: [{ line: Line.Fukutoshin, code: 'F11' }],
+  },
+  {
+    lat: 35.697922,
+    lng: 139.707631,
+    name: 'Higashi-shinjuku',
+    codes: [{ line: Line.Fukutoshin, code: 'F12' }],
+  },
+  {
+    lat: 35.678611,
+    lng: 139.705278,
+    name: 'Kita-sando',
+    codes: [{ line: Line.Fukutoshin, code: 'F14' }],
+  },
   { lat: 35.5868, lng: 139.7059, name: 'Nishi-magome' },
   { lat: 35.5963, lng: 139.7119, name: 'Magome' },
   { lat: 35.6058, lng: 139.7129, name: 'Nakanobu' },
