@@ -276,6 +276,24 @@ export const tokyoMetroStations: TrainStation[] = [
     codes: [{ line: Line.Marunouchi, code: 'M25' }],
   },
   {
+    lat: 35.68347,
+    lng: 139.657445,
+    name: 'Honancho',
+    codes: [{ line: Line.Marunouchi, code: 'Mb03' }],
+  },
+  {
+    lat: 35.690518,
+    lng: 139.666933,
+    name: 'Nakano-fujimicho',
+    codes: [{ line: Line.Marunouchi, code: 'Mb04' }],
+  },
+  {
+    lat: 35.697067,
+    lng: 139.682161,
+    name: 'Nakano-sakaue',
+    codes: [{ line: Line.Marunouchi, code: 'Mb05' }],
+  },
+  {
     lat: 35.644306,
     lng: 139.699187,
     name: 'Naka-meguro',
