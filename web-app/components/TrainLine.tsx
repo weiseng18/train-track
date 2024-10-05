@@ -3,11 +3,12 @@ import { Point } from '../types/points'
 
 interface TrainLineProps {
   points: Point[]
+  indices: number[]
   color: string
   paths: Point[][]
 }
 
-const TrainLine = ({ points, color, paths }: TrainLineProps) => {
+const TrainLine = ({ points, indices, color, paths }: TrainLineProps) => {
   return (
     <>
       {points && points.length > 0 && (
@@ -17,6 +18,7 @@ const TrainLine = ({ points, color, paths }: TrainLineProps) => {
               key={index}
               center={point}
               radius={50}
+              onClick={() => console.log(indices[index])}
               options={{
                 fillColor: 'white',
                 fillOpacity: 1,

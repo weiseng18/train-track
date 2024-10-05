@@ -10,6 +10,7 @@ const MarunouchiLine = ({ info }: { info: TrainStationInfo[] }) => {
     lat: c.lat,
     lng: c.lng,
   }))
+  const indices = info.map((c) => c.index)
 
   // Currently hardcoded based on the index of the stations in the constants file
   // TODO: Find a better way to do this
@@ -18,6 +19,7 @@ const MarunouchiLine = ({ info }: { info: TrainStationInfo[] }) => {
   return (
     <TrainLine
       points={points}
+      indices={indices}
       color={lineColors[Line.Marunouchi]}
       paths={paths}
     />
@@ -46,9 +48,11 @@ const AllTrainLines = () => {
           lat: c.lat,
           lng: c.lng,
         }))
+        const indices = lineMap[line].map((c) => c.index)
         return (
           <StraightTrainLine
             points={points}
+            indices={indices}
             color={lineColors[line]}
             key={line}
           />
