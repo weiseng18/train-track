@@ -5,7 +5,10 @@ export const tokyoMetroStations: TrainStation[] = [
     lat: 35.658514,
     lng: 139.70133,
     name: 'Shibuya',
-    codes: [{ line: Line.Ginza, code: 'G01' }],
+    codes: [
+      { line: Line.Ginza, code: 'G01' },
+      { line: Line.Hanzomon, code: 'Z01' },
+    ],
   },
   {
     lat: 35.665148,
@@ -14,6 +17,7 @@ export const tokyoMetroStations: TrainStation[] = [
     codes: [
       { line: Line.Ginza, code: 'G02' },
       { line: Line.Chiyoda, code: 'C04' },
+      { line: Line.Hanzomon, code: 'Z02' },
     ],
   },
   {
@@ -26,7 +30,10 @@ export const tokyoMetroStations: TrainStation[] = [
     lat: 35.672922,
     lng: 139.724278,
     name: 'Aoyama-itchome',
-    codes: [{ line: Line.Ginza, code: 'G04' }],
+    codes: [
+      { line: Line.Ginza, code: 'G04' },
+      { line: Line.Hanzomon, code: 'Z03' },
+    ],
   },
   {
     lat: 35.676821,
@@ -87,7 +94,10 @@ export const tokyoMetroStations: TrainStation[] = [
     lat: 35.684551,
     lng: 139.774611,
     name: 'Mitsukoshimae',
-    codes: [{ line: Line.Ginza, code: 'G12' }],
+    codes: [
+      { line: Line.Ginza, code: 'G12' },
+      { line: Line.Hanzomon, code: 'Z09' },
+    ],
   },
   {
     lat: 35.691731,
@@ -239,6 +249,7 @@ export const tokyoMetroStations: TrainStation[] = [
       { line: Line.Marunouchi, code: 'M18' },
       { line: Line.Tozai, code: 'T09' },
       { line: Line.Chiyoda, code: 'C11' },
+      { line: Line.Hanzomon, code: 'Z08' },
     ],
   },
   {
@@ -461,7 +472,10 @@ export const tokyoMetroStations: TrainStation[] = [
     lat: 35.6954,
     lng: 139.7514,
     name: 'Kudanshita',
-    codes: [{ line: Line.Tozai, code: 'T07' }],
+    codes: [
+      { line: Line.Tozai, code: 'T07' },
+      { line: Line.Hanzomon, code: 'Z06' },
+    ],
   },
   {
     lat: 35.690707,
@@ -713,7 +727,10 @@ export const tokyoMetroStations: TrainStation[] = [
     lat: 35.678747,
     lng: 139.74026,
     name: 'Nagatacho',
-    codes: [{ line: Line.Yurakucho, code: 'Y16' }],
+    codes: [
+      { line: Line.Yurakucho, code: 'Y16' },
+      { line: Line.Hanzomon, code: 'Z04' },
+    ],
   },
   {
     lat: 35.677353,
@@ -763,13 +780,48 @@ export const tokyoMetroStations: TrainStation[] = [
     name: 'Shin-kiba',
     codes: [{ line: Line.Yurakucho, code: 'Y24' }],
   },
-  { lat: 35.685692, lng: 139.741657, name: 'Hanzomon' },
-  { lat: 35.6959, lng: 139.7577, name: 'Jimbocho' },
-  { lat: 35.6826, lng: 139.7852, name: 'Suitengumae' },
-  { lat: 35.6823, lng: 139.7987, name: 'Kiyosumi-shirakawa' },
-  { lat: 35.689091, lng: 139.816132, name: 'Sumiyoshi' },
-  { lat: 35.696, lng: 139.814, name: 'Kinshicho' },
-  { lat: 35.711, lng: 139.8133, name: 'Oshiage' },
+  {
+    lat: 35.685692,
+    lng: 139.741657,
+    name: 'Hanzomon',
+    codes: [{ line: Line.Hanzomon, code: 'Z05' }],
+  },
+  {
+    lat: 35.6959,
+    lng: 139.7577,
+    name: 'Jimbocho',
+    codes: [{ line: Line.Hanzomon, code: 'Z07' }],
+  },
+  {
+    lat: 35.6826,
+    lng: 139.7852,
+    name: 'Suitengumae',
+    codes: [{ line: Line.Hanzomon, code: 'Z10' }],
+  },
+  {
+    lat: 35.6823,
+    lng: 139.7987,
+    name: 'Kiyosumi-shirakawa',
+    codes: [{ line: Line.Hanzomon, code: 'Z11' }],
+  },
+  {
+    lat: 35.689091,
+    lng: 139.816132,
+    name: 'Sumiyoshi',
+    codes: [{ line: Line.Hanzomon, code: 'Z12' }],
+  },
+  {
+    lat: 35.696,
+    lng: 139.814,
+    name: 'Kinshicho',
+    codes: [{ line: Line.Hanzomon, code: 'Z13' }],
+  },
+  {
+    lat: 35.711,
+    lng: 139.8133,
+    name: 'Oshiage',
+    codes: [{ line: Line.Hanzomon, code: 'Z14' }],
+  },
   { lat: 35.633983, lng: 139.716, name: 'Meguro' },
   { lat: 35.638003, lng: 139.726322, name: 'Shirokanedai' },
   { lat: 35.643183, lng: 139.734128, name: 'Shirokane-takanawa' },
