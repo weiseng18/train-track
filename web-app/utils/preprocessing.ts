@@ -11,7 +11,7 @@ export function obtainLines(): LineMap {
   )
 
   // Populate
-  tokyoMetroStations.forEach((station) => {
+  tokyoMetroStations.forEach((station, index) => {
     if (station.codes && station.codes.length > 0) {
       station.codes.forEach((c) => {
         const { code, line } = c
@@ -19,7 +19,8 @@ export function obtainLines(): LineMap {
           lat: station.lat,
           lng: station.lng,
           name: station.name,
-          code: code,
+          code,
+          index,
         }
         lineMap[line].push(trainStationInfo)
       })
