@@ -326,7 +326,7 @@ export const tokyoMetroStations: TrainStation[] = [
   {
     lat: 35.697067,
     lng: 139.682161,
-    name: 'Nakano-sakaue',
+    name: 'Nakano-shimbashi',
     codes: [{ line: Line.Marunouchi, code: 'Mb05' }],
   },
   {
@@ -441,7 +441,10 @@ export const tokyoMetroStations: TrainStation[] = [
     lat: 35.749407,
     lng: 139.805102,
     name: 'Kita-senju',
-    codes: [{ line: Line.Hibiya, code: 'H22' }],
+    codes: [
+      { line: Line.Hibiya, code: 'H22' },
+      { line: Line.Chiyoda, code: 'C18' },
+    ],
   },
   {
     lat: 35.706111,
@@ -644,12 +647,6 @@ export const tokyoMetroStations: TrainStation[] = [
     lng: 139.7816,
     name: 'Machiya',
     codes: [{ line: Line.Chiyoda, code: 'C17' }],
-  },
-  {
-    lat: 35.749407,
-    lng: 139.805102,
-    name: 'Kita-senju',
-    codes: [{ line: Line.Chiyoda, code: 'C18' }],
   },
   {
     lat: 35.762203,
@@ -1005,7 +1002,6 @@ export const tokyoMetroStations: TrainStation[] = [
   { lat: 35.7903, lng: 139.6544, name: 'Shin-takashimadaira' },
   { lat: 35.7919, lng: 139.6459, name: 'Nishi-takashimadaira' },
   { lat: 35.692389, lng: 139.722778, name: 'Akebonobashi' },
-  { lat: 35.6959, lng: 139.7577, name: 'Jimbocho' },
   { lat: 35.69505, lng: 139.76667, name: 'Ogawamachi' },
   { lat: 35.695545, lng: 139.775855, name: 'Iwamotocho' },
   { lat: 35.6921, lng: 139.783, name: 'Bakuro-yokoyama' },
